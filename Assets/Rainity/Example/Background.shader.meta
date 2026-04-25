@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 362a3c3622ce92f438652cac06c9be33
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 127504
+  packageName: Rainity - Dynamic Wallpapers
+  packageVersion: 1.7.2
+  assetPath: Assets/Rainity/Example/Background.shader
+  uploadId: 353941

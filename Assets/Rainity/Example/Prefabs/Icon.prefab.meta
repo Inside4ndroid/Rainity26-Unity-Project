@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 219b8e24de1223c40a50f29fc1f91a12
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 127504
+  packageName: Rainity - Dynamic Wallpapers
+  packageVersion: 1.7.2
+  assetPath: Assets/Rainity/Example/Prefabs/Icon.prefab
+  uploadId: 353941

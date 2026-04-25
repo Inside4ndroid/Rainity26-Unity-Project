@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b824abcec8c17e740b71123a7051dfff
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 127504
+  packageName: Rainity - Dynamic Wallpapers
+  packageVersion: 1.7.2
+  assetPath: Assets/Rainity/Editor/RainityEditor.cs
+  uploadId: 353941

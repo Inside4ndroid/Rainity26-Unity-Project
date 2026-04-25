@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 4af6c83e9c466254e894c704cf896fbb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 127504
+  packageName: Rainity - Dynamic Wallpapers
+  packageVersion: 1.7.2
+  assetPath: Assets/Rainity/Scripts/Input/RainityBaseInput.cs
+  uploadId: 353941

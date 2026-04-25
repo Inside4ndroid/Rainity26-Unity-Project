@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 03fb02301eb31b04ea20d13a6abb19c7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 127504
+  packageName: Rainity - Dynamic Wallpapers
+  packageVersion: 1.7.2
+  assetPath: Assets/Rainity/Example/Prefabs/RainityEventSystem.prefab
+  uploadId: 353941

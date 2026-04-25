@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b4fc2a38acca3b3458eba45baeeeb29f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 127504
+  packageName: Rainity - Dynamic Wallpapers
+  packageVersion: 1.7.2
+  assetPath: Assets/Rainity/Example/Background.mat
+  uploadId: 353941
