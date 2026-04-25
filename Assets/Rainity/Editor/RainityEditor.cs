@@ -14,6 +14,7 @@ public class RainityEditor : Editor {
 	SerializedProperty borderless;
 	SerializedProperty behindIcons;
 	SerializedProperty useRainityInput;
+	SerializedProperty targetFps;
 
 	private void OnEnable() {
 		windowOffset = serializedObject.FindProperty("windowOffset");
@@ -23,6 +24,7 @@ public class RainityEditor : Editor {
 		borderless = serializedObject.FindProperty("borderless");
 		behindIcons = serializedObject.FindProperty("behindIcons");
 		useRainityInput = serializedObject.FindProperty("useRainityInput");
+		targetFps = serializedObject.FindProperty("targetFps");
 	}
 
 	public override void OnInspectorGUI() {
@@ -40,6 +42,9 @@ public class RainityEditor : Editor {
 		EditorGUILayout.PropertyField(borderless);
 		EditorGUILayout.PropertyField(behindIcons);
 		EditorGUILayout.PropertyField(useRainityInput);
+		EditorGUILayout.Separator();
+
+		EditorGUILayout.PropertyField(targetFps);
 		EditorGUILayout.Separator();
 
 		if (GUILayout.Button("Documentation")) {

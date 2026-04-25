@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.Rendering;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.IO;
@@ -87,6 +88,8 @@ public class Rainity : MonoBehaviour {
 	public bool borderless = false;
 	public bool behindIcons = false;
 	public bool useRainityInput = false;
+	[Tooltip("Target frame rate for the application. Set to -1 for unlimited.")]
+	public int targetFps = 60;
 
 	private float timer = 1f;
 	private static float cpuUsage = 0;
@@ -197,6 +200,13 @@ public class Rainity : MonoBehaviour {
 	public void Awake() {
 		instance = this;
 
+		// Ensure Unity renders every frame even without OS focus.
+		// OnDemandRendering is a URP system that can throttle the render loop
+		// when the window is unfocused — which is always the case when parented
+		// into the WorkerW desktop layer.
+		Application.runInBackground = true;
+		OnDemandRendering.renderFrameInterval = 1;
+
 		Initialize();
 	}
 
@@ -216,6 +226,10 @@ public class Rainity : MonoBehaviour {
 		}
 
 		Application.runInBackground = true;
+
+		// vSyncCount must be 0 for targetFrameRate to take effect.
+		QualitySettings.vSyncCount = 0;
+		Application.targetFrameRate = targetFps;
 	}
 
 	/// <summary>

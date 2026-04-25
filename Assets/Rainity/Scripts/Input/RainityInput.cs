@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
 
 public class RainityInput : MonoBehaviour {
 
@@ -156,6 +157,8 @@ public class RainityInput : MonoBehaviour {
 		mousePosition = new Vector3(mPos.x, SetupDesktop.fHeight - mPos.y - 1, 0);
 		if (Application.isEditor)
 			mousePosition = Mouse.current != null ? (Vector3)Mouse.current.position.ReadValue() : Vector3.zero;
+		else if (Mouse.current != null)
+			InputState.Change(Mouse.current.position, new Vector2(mousePosition.x, mousePosition.y));
 
 		if (GetMouseDown()) {
 			SetMouseButton(0, true);

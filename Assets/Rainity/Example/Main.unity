@@ -2963,6 +2963,7 @@ GameObject:
   - component: {fileID: 1545355598}
   - component: {fileID: 1545355597}
   - component: {fileID: 1545355601}
+  - component: {fileID: 1545355602}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3092,6 +3093,22 @@ MonoBehaviour:
   diskImage: {fileID: 233762945}
   gpuText: {fileID: 469081019}
   gpuImage: {fileID: 651393483}
+--- !u!114 &1545355602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545355596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b353a4bc80cf24abdec3695bfdd8cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FpsCounter
+  smoothing: 0.1
+  fontSize: 18
+  paddingRight: 12
+  paddingTop: 8
 --- !u!1 &1574113947
 GameObject:
   m_ObjectHideFlags: 0
@@ -3201,6 +3218,7 @@ MonoBehaviour:
   borderless: 1
   behindIcons: 1
   useRainityInput: 1
+  targetFps: 60
 --- !u!81 &1577755156
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3660,6 +3678,10 @@ PrefabInstance:
     - target: {fileID: 4655308888627596, guid: e8688117e29325f4f8876bea38575a04, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114999497689119244, guid: e8688117e29325f4f8876bea38575a04, type: 3}
+      propertyPath: m_SendPointerHoverToParent
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
